@@ -51,6 +51,7 @@ def computeExpectedScores(homeTeamCR,awayTeamCR):
     
     return homeTeamExpScore,awayTeamExpScore
 
+# Margin of Victory Multiplier
 def computeMovMultiplier(elow,elol,pd):
     movMultiplier = math.log(abs(pd+1))*(2.2 / ((0.001 * (elow - elol))+2.2))
 
